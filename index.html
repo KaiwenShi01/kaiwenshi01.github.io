@@ -67,6 +67,14 @@ footer \{\
     </p>\
 </section>\
 \
+<h2 id="careHeading" style="cursor:pointer;">
+What I Care About Right Now
+</h2>
+
+<p id="careText" style="display:none;">
+Right now I care about deep listening, meditation practice,
+and growing creatively every day.
+</p>
 <section>\
     <h2>Meditation & Stillness</h2>\
     <p>\
@@ -81,5 +89,17 @@ footer \{\
     <p>\'a9 2026 Kaiwen Shi</p>\
 </footer>\
 \
+    <script>
+const heading = document.getElementById("careHeading");
+const text = document.getElementById("careText");
+
+heading.addEventListener("click", () => {
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+});
+</script>
 </body>\
 </html>}
