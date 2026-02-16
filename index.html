@@ -63,6 +63,75 @@ footer {
     color: #777;
     font-size: 0.9rem;
 }
+/* --- What I'm Building Section --- */
+
+.building-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.building-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.building-container {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+}
+
+.building-container::-webkit-scrollbar {
+    display: none;
+}
+
+.building-card {
+    flex: 0 0 420px;
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.building-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.building-card p {
+    margin-bottom: 16px;
+    color: #444;
+}
+
+.building-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.building-cta a {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 500;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.building-cta a:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
 </style>
 </head>
 
@@ -102,6 +171,47 @@ and growing creatively every day.
     </p>
 </section>
 
+<section class="building-section">
+    <h2>What I’m Building</h2>
+
+    <div class="building-container">
+
+        <div class="building-card">
+            <div>
+                <p><strong>Item One</strong></p>
+                <p>One sentence describing what it is.</p>
+                <p>One sentence describing who it is for.</p>
+                <p>One sentence describing the problem it solves.</p>
+            </div>
+        </div>
+
+        <div class="building-card">
+            <div>
+                <p><strong>Item Two</strong></p>
+                <p>One sentence describing what it is.</p>
+                <p>One sentence describing who it is for.</p>
+                <p>One sentence describing the problem it solves.</p>
+            </div>
+        </div>
+
+        <div class="building-card">
+            <div>
+                <p><strong>Item Three</strong></p>
+                <p>One sentence describing what it is.</p>
+                <p>One sentence describing who it is for.</p>
+                <p>One sentence describing the problem it solves.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="building-cta">
+        <a href="mailto:your@email.com">Contact Me</a>
+    </div>
+
+</section>
+
+    
 <footer>
     <p>© 2026 Kaiwen Shi</p>
 </footer>
